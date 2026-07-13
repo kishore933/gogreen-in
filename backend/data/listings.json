@@ -1,0 +1,62 @@
+[
+  {
+    "id": "b1a1f6d0-1111-4a11-8a11-000000000001",
+    "sourceName": "Green Valley Grocers",
+    "type": "Spoiled produce",
+    "quantityKg": 40,
+    "location": "Coimbatore, RS Puram",
+    "contact": "greenvalley@example.com",
+    "notes": "Set aside daily around closing time",
+    "status": "open",
+    "postedAt": "2026-07-09T09:00:00.000Z",
+    "claimedAt": null
+  },
+  {
+    "id": "b1a1f6d0-1111-4a11-8a11-000000000002",
+    "sourceName": "Rivera Family Farm",
+    "type": "Husk",
+    "quantityKg": 120,
+    "location": "Coimbatore, Sulur",
+    "contact": "+91 90000 00000",
+    "notes": "Coconut husk, dry storage available",
+    "status": "open",
+    "postedAt": "2026-07-08T14:30:00.000Z",
+    "claimedAt": null
+  },
+  {
+    "id": "b1a1f6d0-1111-4a11-8a11-000000000003",
+    "sourceName": "Sunrise Juice Bar",
+    "type": "Fruit peels",
+    "quantityKg": 18,
+    "location": "Coimbatore, Gandhipuram",
+    "contact": "sunrisejuice@example.com",
+    "notes": "",
+    "status": "claimed",
+    "postedAt": "2026-07-05T08:00:00.000Z",
+    "claimedAt": "2026-07-06T10:00:00.000Z"
+  },
+  {
+    "id": "b1a1f6d0-1111-4a11-8a11-000000000004",
+    "sourceName": "Thendral Farms",
+    "type": "Stalks",
+    "quantityKg": 65,
+    "location": "Coimbatore, Kinathukadavu",
+    "contact": "thendralfarms@example.com",
+    "notes": "Banana stalks, available after harvest",
+    "status": "claimed",
+    "postedAt": "2026-07-03T11:00:00.000Z",
+    "claimedAt": "2026-07-04T09:00:00.000Z"
+  },
+  {
+    "id": "80305b34-1a7d-4d94-9a38-5c434f8d90c9",
+    "sourceName": "Test Farm",
+    "type": "Husk",
+    "quantityKg": 30,
+    "location": "Test City",
+    "contact": "test@example.com",
+    "notes": "test",
+    "status": "claimed",
+    "postedAt": "2026-07-11T06:46:54.082Z",
+    "claimedAt": "2026-07-11T06:46:57.362Z"
+  }
+]

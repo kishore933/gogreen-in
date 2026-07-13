@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Compost & organic fertilizer",
+    "madeFrom": "Vegetable scraps, spoiled produce",
+    "becomes": "Soil compost",
+    "description": "Broken down over a few weeks, food scraps turn into nutrient-rich compost that farms and home gardens use in place of chemical fertilizer."
+  },
+  {
+    "name": "Animal feed",
+    "madeFrom": "Fruit & vegetable trimmings",
+    "becomes": "Livestock feed",
+    "description": "Produce that's cosmetically 'ugly' but still nutritious is dried or processed into feed for cattle, poultry, and fish farms."
+  },
+  {
+    "name": "Biogas & energy",
+    "madeFrom": "Spoiled produce, stalks",
+    "becomes": "Biogas / electricity",
+    "description": "Anaerobic digestion breaks organic waste down and captures the methane released, which is burned for cooking gas or electricity instead of escaping into the atmosphere."
+  },
+  {
+    "name": "Coconut husk fiber",
+    "madeFrom": "Husk",
+    "becomes": "Coir fiber & mats",
+    "description": "Husk fiber is spun into coir rope, doormats, and packaging padding — a traditional use that's still one of the most efficient ways to use this material."
+  },
+  {
+    "name": "Banana stem fiber",
+    "madeFrom": "Stalks",
+    "becomes": "Textile & paper fiber",
+    "description": "Banana plant stems, usually discarded after harvest, can be processed into a strong fiber used in textiles, rope, and specialty paper."
+  },
+  {
+    "name": "Peel-based extracts",
+    "madeFrom": "Fruit peels",
+    "becomes": "Natural cleaning extract",
+    "description": "Citrus and other peels are fermented into enzyme-based liquid that works as a natural, biodegradable cleaner and degreaser."
+  }
+]

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Go Green — From Waste to Resource</title>
+<meta name="description" content="Go Green connects organic waste from stores and farms with people who turn it into compost, feed, fiber, and fuel." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Archivo:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="texture" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 20L4 10L12 4L20 10L20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 20V14H15V20" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </span>
+      Go Green
+    </a>
+    <nav class="site-nav">
+      <a href="#how">How it works</a>
+      <a href="#browse">Browse waste</a>
+      <a href="#list">List waste</a>
+      <a href="#products">What it becomes</a>
+      <a href="#learn">Learn</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="hero">
+    <div class="hero-text">
+      <p class="eyebrow">A collection network for organic waste</p>
+      <h1 class="display">Their waste is<br><em>somebody's raw material.</em></h1>
+      <p class="lede">Stores and farms throw out spoiled produce, peels, husk, and stalks every day. Go Green logs it, matches it with composters, biogas plants, and small makers nearby, and tracks how much of it is diverted from landfill.</p>
+      <div class="hero-actions">
+        <a href="#list" class="btn btn-primary">List your waste</a>
+        <a href="#browse" class="btn btn-ghost">Browse what's available</a>
+      </div>
+    </div>
+
+    <div class="flow-card">
+      <p class="specimen-label">The loop</p>
+      <svg viewBox="0 0 320 220" width="100%" height="100%" role="img" aria-label="Waste flows from a source to Go Green to a maker, and becomes a product">
+        <g font-family="Space Mono, monospace" font-size="10" fill="var(--paper)">
+          <!-- node 1: source -->
+          <rect x="8" y="20" width="90" height="56" rx="3" fill="none" stroke="var(--husk)" stroke-width="1.4"/>
+          <text x="53" y="44" text-anchor="middle" fill="var(--husk)" font-weight="700">STORE / FARM</text>
+          <text x="53" y="60" text-anchor="middle" fill="var(--paper-dim)">peels · husk · stalks</text>
+
+          <!-- arrow 1 -->
+          <path d="M100 48 L138 48" stroke="var(--marigold)" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+          <!-- node 2: go green -->
+          <rect x="140" y="20" width="90" height="56" rx="3" fill="none" stroke="var(--marigold)" stroke-width="1.6"/>
+          <text x="185" y="44" text-anchor="middle" fill="var(--marigold)" font-weight="700">GO GREEN</text>
+          <text x="185" y="60" text-anchor="middle" fill="var(--paper-dim)">logs &amp; matches</text>
+
+          <!-- arrow 2 -->
+          <path d="M232 48 L270 48" stroke="var(--marigold)" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+          <!-- node 3: maker -->
+          <rect x="222" y="20" width="0" height="0" opacity="0"/>
+          <rect x="8" y="140" width="90" height="56" rx="3" fill="none" stroke="var(--leaf)" stroke-width="1.4"/>
+          <text x="53" y="164" text-anchor="middle" fill="var(--leaf)" font-weight="700">COMPOSTER /</text>
+          <text x="53" y="178" text-anchor="middle" fill="var(--leaf)" font-weight="700">MAKER</text>
+
+          <!-- arrow down from go green to maker -->
+          <path d="M185 78 L185 110 L98 110 L98 138" stroke="var(--leaf)" stroke-width="1.6" fill="none" marker-end="url(#arrow2)"/>
+
+          <!-- node 4: product -->
+          <rect x="140" y="140" width="90" height="56" rx="3" fill="none" stroke="var(--paper)" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <text x="185" y="162" text-anchor="middle" fill="var(--paper)" font-weight="700">COMPOST ·</text>
+          <text x="185" y="176" text-anchor="middle" fill="var(--paper)" font-weight="700">FEED · FIBER</text>
+
+          <path d="M98 168 L138 168" stroke="var(--leaf)" stroke-width="1.6" marker-end="url(#arrow3)"/>
+        </g>
+        <defs>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--marigold)"/></marker>
+          <marker id="arrow2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--leaf)"/></marker>
+          <marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--leaf)"/></marker>
+        </defs>
+      </svg>
+    </div>
+  </section>
+
+  <!-- IMPACT LEDGER -->
+  <section class="ledger-section" id="impact">
+    <div class="wrap">
+      <p class="eyebrow eyebrow-light">Manifest — running totals</p>
+      <div id="ledgerGrid" class="ledger-grid">
+        <p class="loading-text">Loading the manifest…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how wrap" id="how">
+    <div class="section-head">
+      <p class="eyebrow">The process</p>
+      <h2 class="display-sm">Three steps, one working loop</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <span class="step-index">01</span>
+        <h3>Source lists it</h3>
+        <p>A store or farm logs what they're throwing out — type, rough weight, and where to collect it.</p>
+      </li>
+      <li class="step">
+        <span class="step-index">02</span>
+        <h3>A maker claims it</h3>
+        <p>Composters, biogas operators, farmers, and small artisans browse open listings and mark one as collected.</p>
+      </li>
+      <li class="step">
+        <span class="step-index">03</span>
+        <h3>It becomes something</h3>
+        <p>The same waste turns into compost, feed, fiber, or fuel instead of rotting in a landfill.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- BROWSE LISTINGS -->
+  <section class="browse wrap" id="browse">
+    <div class="section-head">
+      <p class="eyebrow">Open listings</p>
+      <h2 class="display-sm">Waste ready for pickup</h2>
+      <p class="section-sub">Filter by type, then mark a listing collected once you've picked it up.</p>
+    </div>
+
+    <div class="filter-row" id="typeFilters">
+      <button class="chip is-active" data-type="all">All</button>
+    </div>
+
+    <div id="listingsGrid" class="listings-grid">
+      <p class="loading-text">Loading listings…</p>
+    </div>
+  </section>
+
+  <!-- LIST YOUR WASTE -->
+  <section class="list-waste wrap" id="list">
+    <div class="list-card">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-light">For stores &amp; farms</p>
+        <h2 class="display-sm">List what you're throwing out</h2>
+        <p class="section-sub">Takes under a minute. Your listing appears in Browse immediately.</p>
+      </div>
+
+      <form id="listingForm" class="listing-form">
+        <label class="field">
+          <span>Business or farm name</span>
+          <input type="text" id="sourceName" placeholder="Rivera Family Farm" required />
+        </label>
+        <label class="field">
+          <span>Type of waste</span>
+          <select id="wasteType" required>
+            <option value="">Choose one…</option>
+            <option value="Fruit peels">Fruit peels</option>
+            <option value="Vegetable scraps">Vegetable scraps</option>
+            <option value="Husk">Husk</option>
+            <option value="Stalks">Stalks</option>
+            <option value="Spoiled produce">Spoiled produce</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Roughly how much (kg)</span>
+          <input type="number" id="quantityKg" min="1" step="1" placeholder="50" required />
+        </label>
+        <label class="field">
+          <span>Pickup location / area</span>
+          <input type="text" id="location" placeholder="Coimbatore, near Gandhipuram market" required />
+        </label>
+        <label class="field field-wide">
+          <span>Contact (email or phone)</span>
+          <input type="text" id="contact" placeholder="rivera.farm@example.com" required />
+        </label>
+        <label class="field field-wide">
+          <span>Notes (optional)</span>
+          <input type="text" id="notes" placeholder="Best collected before 6pm, ask for Sam" />
+        </label>
+        <button type="submit" class="btn btn-primary">Post listing</button>
+      </form>
+      <p class="form-status" id="listingStatus" role="status"></p>
+    </div>
+  </section>
+
+  <!-- EXTRACTED PRODUCTS -->
+  <section class="products wrap" id="products">
+    <div class="section-head">
+      <p class="eyebrow">What it becomes</p>
+      <h2 class="display-sm">The same waste, put to use</h2>
+      <p class="section-sub">A look at what these materials turn into once collected and processed.</p>
+    </div>
+    <div id="productsGrid" class="products-grid">
+      <p class="loading-text">Loading…</p>
+    </div>
+  </section>
+
+  <!-- LEARN -->
+  <section class="learn wrap" id="learn">
+    <div class="section-head">
+      <p class="eyebrow">New to this?</p>
+      <h2 class="display-sm">Short guides to get started</h2>
+    </div>
+    <div id="learnGrid" class="learn-grid">
+      <p class="loading-text">Loading…</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Go Green — turning waste no one wants into resources someone needs.</p>
+    <p class="footer-meta">HTML, CSS, vanilla JS &amp; a small Express backend.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
